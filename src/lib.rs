@@ -19,7 +19,7 @@ pub enum Status {
 /// type is defined in the sentry-kernel uapi types module, with extern(C)
 /// it order to be readable by the kernel
 #[derive(PartialEq,Debug)]
-struct ShmInfo {
+pub struct ShmInfo {
     handle: u32,
     label: u32,
     base: usize,
